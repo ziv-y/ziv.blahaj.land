@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(123deg, #ff9ff3, #c44569, #f8a5c2);
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    color: #FF0000;
+}
+
+.header {
+    font-size: 5em;
+    text-align: center;
+    margin: 50px;
+    color: #0f0;
+    text-shadow: 5px 5px 0 #FF69B4, 10px 10px 0 #00FFFF, -5px -5px 0 #00FF00;
+    animation: wiggle 3s infinite;
+}
+
+@keyframes wiggle {
+    0% { transform: rotate(0deg); }
+    50% { transform: rotate(5deg); }
+    100% { transform: rotate(-5deg); }
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #00FF00;
+    padding: 20px;
+    box-shadow: 10px 10px 20px #000000;
+    margin-bottom: 40px;
+}
+
+.navbar a {
+    text-decoration: none;
+    margin: 0 20px;
+    color: #FF0000;
+    font-weight: bold;
+    font-size: 2em;
+    transition: transform 0.3s;
+}
+
+.navbar a:hover {
+    transform: skewX(20deg) scale(1.2);
+    color: #FF00FF;
+}
+
+.content {
+    font-size: 3em;
+    margin: 20px;
+    text-align: center;
+    color: #0000FF;
+    background-color: #FFFF00;
+    padding: 40px;
+    box-shadow: 20px 20px 50px #FF00FF;
+    border: 5px dashed #FF0000;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+}
+
+.died-screen {
+    background-color: #000000;
+    color: #FF0000;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Papyrus', fantasy;
+}
+
+.died-screen h1 {
+    font-size: 10em;
+    text-shadow: 10px 10px 20px #FF69B4, -10px -10px 20px #00FF00;
+    animation: pulse 2s infinite;
+}
+
+.died-screen p {
+    font-size: 2em;
+    color: #FFFFFF;
+    animation: glitch 1s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+@keyframes glitch {
+    0% { transform: translate(0); }
+    20% { transform: translate(-5px, 5px); }
+    40% { transform: translate(5px, -5px); }
+    60% { transform: translate(-5px, -5px); }
+    80% { transform: translate(5px, 5px); }
+    100% { transform: translate(0); }
+}

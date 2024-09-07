@@ -1,0 +1,38 @@
+.died-screen {
+    background-color: #000000;
+    color: #FF0000;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Papyrus', fantasy;
+}
+
+.died-screen h1 {
+    font-size: 10em;
+    text-shadow: 10px 10px 20px #FF69B4, -10px -10px 20px #00FF00;
+    animation: pulse 2s infinite;
+}
+
+.died-screen p {
+    font-size: 2em;
+    color: #FFFFFF;
+    animation: glitch 1s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+@keyframes glitch {
+    0% { transform: translate(0); }
+    20% { transform: translate(-5px, 5px); }
+    40% { transform: translate(5px, -5px); }
+    60% { transform: translate(-5px, -5px); }
+    80% { transform: translate(5px, 5px); }
+    100% { transform: translate(0); }
+}
